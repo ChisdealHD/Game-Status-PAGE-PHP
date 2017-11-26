@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>PUBG API - Statics Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png">
+    
+    <style> 
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
+    </style>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="center">
+
+        <div style="margin-top: 5em">
+
+            <img src="assets/images/logo.png" width="300" height="100">
+
+            <h2>PUBG API</h2>
+
+            <span>
+
+                <h1>Please type a Username on PUBG for status.</h1>
+
+                <input type="text" name="cod_meio" id="cod_meio" value="">
+                <select type="text" name="cod_mei6" id="cod_mei6">
+                    <option value="pc">pc</option>
+                    <option value="ps4">ps4(Coming SOON!)</option>
+                    <option value="xboxone">xboxone(Coming SOON!)</option>
+                </select>
+                <input type="button" name="Submit" id="Submit" value="Submit" onclick="location.href='https://chisdealhdapi.000webhostapp.com/PUBG/'+document.getElementById('cod_mei6').value+'.php?user='+ document.getElementById('cod_meio').value;">
+
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
